@@ -1,0 +1,67 @@
+# Python-specific ignores
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+.env/
+
+# Dependency directories
+dist/
+build/
+*.egg-info/
+*.egg
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Testing and coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.pytest_cache/
+
+# Logs and temporary files
+*.log
+*.log.*
+*.tmp
+temp/
+tmp/
+
+# Sensitive data
+.env
+secrets/
+*.key
+*.pem
+*.crt
+
+# Project-specific ignores (Asha Chatbot)
+users.json  # User data file containing hashed passwords
+*.mmd       # Mermaid diagram files (if not needed in version control)
+*.png       # Generated images (e.g., if charts or diagrams are saved)
+
+# Miscellaneous
+*.bak
+*.swp
+*.swo
+*.zip
+*.tar.gz

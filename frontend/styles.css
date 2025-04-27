@@ -1,0 +1,219 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Auth Page Styling
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
+}
+.auth-card {
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: slideIn 0.5s ease;
+} */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.auth-title {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.tab {
+    background-color: #e0e0e0;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 45%;
+    text-align: center;
+}
+.tab.active {
+    background-color: #000000;
+    color: #ffffff;
+}
+.tab:hover {
+    background-color: #d0d0d0;
+}
+.auth-form .stTextInput input {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: border-color 0.3s ease;
+}
+.auth-form .stTextInput input:focus {
+    border-color: #000000;
+    outline: none;
+}
+.auth-form .stButton>button {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 500;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.auth-form .stButton>button:hover {
+    background-color: #333333;
+}
+.error-message {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.success-message {
+    color: #008000;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Chatbot Page Styling */
+.chatbot-main {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.chatbot-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.chatbot-caption {
+    color: #666666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.sidebar .sidebar-content {
+    max-width: 300px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 0;
+}
+.sidebar-header {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.chat-container {
+    background-color: #f5f5f9;
+    border-radius: 12px;
+    padding: 10px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 0.5rem;
+}
+.chat-bubble-user {
+    background-color: #f0f2f6;
+    padding: 10px 15px;
+    border-radius: 18px 18px 0 18px;
+    margin: 5px 0;
+    max-width: 80%;
+    float: right;
+    clear: both;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.chat-bubble-bot {
+    background-color: #4a8cff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 18px 18px 18px 0;
+    margin: 5px 0;
+    max-width: 80%;
+    float: left;
+    clear: both;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.chatbot-form {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+.chatbot-form .stTextInput input {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: border-color 0.3s ease;
+}
+.chatbot-form .stTextInput input:focus {
+    border-color: #000000;
+    outline: none;
+}
+.chatbot-form .stTextInput input::placeholder {
+    color: #ff0000;
+    opacity: 1;
+}
+.chatbot-form .stTextInput div[data-baseweb="input"] {
+    margin-bottom: 0;
+}
+.chatbot-form .stButton>button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 500;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.chatbot-form .stButton>button:hover {
+    background-color: #357abd;
+}
+.quick-action-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+}
+.quick-action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+}
+.stColumns {
+    gap: 0.5rem;
+}
