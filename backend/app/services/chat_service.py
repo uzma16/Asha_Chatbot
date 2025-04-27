@@ -18,7 +18,7 @@ sys.path.append(str(backend_dir))
 # Initialize Gemini LLM
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash",
-    api_key="AIzaSyCUdGlXbW8-oq5I3QemsDERPhNvO5VL7zs"  # Replace with your actual API key
+    api_key="os.getenv("GOOGLE_API_KEY")"  # Replace with your actual API key
 )
 
 class ChatService:
